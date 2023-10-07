@@ -2,7 +2,12 @@
  * @jest-environment jsdom
  */
 
-import {fireEvent, getByTestId, logDOM, screen, waitFor,
+import {
+  fireEvent,
+  getByTestId,
+  logDOM,
+  screen,
+  waitFor,
 } from "@testing-library/dom"
 import userEvent from "@testing-library/user-event"
 import BillsUI from "../views/BillsUI.js"
