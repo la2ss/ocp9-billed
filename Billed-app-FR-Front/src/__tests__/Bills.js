@@ -18,7 +18,7 @@ import Bills from "../containers/Bills"
 import { localStorageMock } from "../__mocks__/localStorage.js"
 import mockStore from "../__mocks__/store"
 
-import router from "../app/Router.js"
+import router from "../app/Router.js" 
 
 jest.mock("../app/store", () => mockStore)
 
