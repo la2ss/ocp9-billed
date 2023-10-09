@@ -206,6 +206,21 @@ describe("Given I am connected as an employee", () => {
     })
   })
 
+  //POST test
+  describe("I'm posting a form that is valid", () => {
+    test("we fetch the new Bills from the mock using the API with the POST protocol", async () => {
+      const newBill = bill
 
+      const mockedStoreBills = storeFromMock.bills().update(newBill)
+
+      let result = {}
+      mockedStoreBills.then((object) => {
+        result = object
+        expect(result.id).toBe("47qAXb6fIm2zOKkLzMro")
+      })
+
+      expect(mockedStoreBills).not.toBeNull()
+    })
+  })
 })
 
