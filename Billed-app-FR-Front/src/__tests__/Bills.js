@@ -70,6 +70,53 @@ describe("Given I am connected as an employee", () => {
       expect(document.body.innerHTML).not.toBe(BillsUI({ data: bills }))
     })
 
+    // describe("When the eye icon is clicked", () => {
+    //   test("A dialog window with the image of the bill should open", () => {
+    //     window = { ...window, localStorage: localStorageMock }
+
+    //     window.localStorage.setItem(
+    //       "user",
+    //       JSON.stringify({
+    //         type: "Employee",
+    //       })
+    //     )
+
+    //     document.body.innerHTML = BillsUI({ data: bill })
+
+    //     const tableBody = screen.getByTestId("tbody")
+
+    //     const tableRow = tableBody.querySelector("tr")
+
+    //     expect(tableRow).not.toBeNull()
+
+    //     const onNavigate = (pathname) => {
+    //       document.body.innerHTML = ROUTES({ pathname })
+    //     }
+    //     const store = bills
+    //     const firstBill = new Bills({
+    //       document,
+    //       onNavigate,
+    //       store,
+    //       localStorage: window.localStorage,
+    //     })
+    //     $.fn.modal = jest.fn()
+    //     const eyeIcon = screen.getByTestId("icon-eye")
+
+    //     expect(eyeIcon).not.toBeNull()
+
+    //     const handleClickIconEye = jest.fn(
+    //       firstBill.handleClickIconEye(eyeIcon)
+    //     )
+    //     eyeIcon.addEventListener("click", handleClickIconEye)
+
+    //     fireEvent.click(eyeIcon)
+
+    //     expect(handleClickIconEye).toHaveBeenCalled()
+
+    //     const dialogModal = screen.getByTestId("billModal")
+    //     expect(dialogModal).not.toBeNull()
+    //   })
+    // })
   })
 
   //GET test
